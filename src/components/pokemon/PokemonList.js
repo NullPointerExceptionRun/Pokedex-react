@@ -5,7 +5,7 @@ export default class PokemonList extends Component {
     render() {
         return (
             <div>
-                <PokemonCard />
+                <PokemonCard  />
             </div>
         )
     }
