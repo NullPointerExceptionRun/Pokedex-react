@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class PokemonList extends Component {
+export default class PokemonCard extends Component {
     render() {
         return (
             <div>
