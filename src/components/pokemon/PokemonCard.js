@@ -7,7 +7,7 @@ export default class PokemonCard extends Component {
         {/* Cards pokemon */}
         <div className="card">
           <div className="card-header">
-              <h1>herucles snatos</h1>
+              <h1>Hercules Pokedex</h1>
           </div>
         </div>
       </div>
