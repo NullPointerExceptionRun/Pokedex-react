@@ -5,7 +5,7 @@ import reactDom from "react-dom";
 
 export default class PokemonList extends Component {
   state = {
-    url: "https://pokeapi.com/api/v2/pokemon",
+    url: 'https://pokeapi.co/api/v2/pokemon',
     pokemon: null,
   };
   async componentDidMount() {
@@ -14,12 +14,16 @@ export default class PokemonList extends Component {
   }
   render() {
     return (
-        <React.Fragment>
-        {this.state.pokemon ? (<div className="row">
-        {this.state.pokemon.map(pokemon => 
-        (<PokemonCard/>
-        ))}
-      </div>) : (<h1>Loading Pokemon</h1>)}
+      <React.Fragment>
+        {this.state.pokemon ? (
+          <div className="row">
+            {this.state.pokemon.map(pokemon => (
+              <PokemonCard />
+            ))}
+          </div>
+        ) : (
+          <h1>Loading Pokemon</h1>
+        )}
       </React.Fragment>
     );
   }
