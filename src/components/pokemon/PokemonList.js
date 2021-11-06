@@ -5,7 +5,7 @@ import reactDom from "react-dom";
 
 export default class PokemonList extends Component {
   state = {
-    url: 'https://pokeapi.co/api/v2/pokemon',
+    url: 'https://pokeapi.co/api/v2/pokemon/',
     pokemon: null,
   };
   async componentDidMount() {
